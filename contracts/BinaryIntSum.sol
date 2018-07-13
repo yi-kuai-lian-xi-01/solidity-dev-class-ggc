@@ -8,7 +8,9 @@ contract BinaryIntSum {
      * @param input 给定的 10 个 uint16 类型的整数
      * @return 输入数组中每个整数经 getMinimalBinaryInt 变换后的结果的总和
      */
-    function runMinimalBinaryIntSum(uint16[10] input) public pure returns(uint32) {
+    function runMinimalBinaryIntSum(uint16[10] input)
+        public pure returns(uint32)
+    {
         uint32 result;
         for (uint8 i; i < 10; i++) {
             result += getMinimalBinaryInt(input[i]);
@@ -21,7 +23,9 @@ contract BinaryIntSum {
      * @param input 给定的 uint16 类型的整数
      * @return 经变换后的新整数
      */
-    function getMinimalBinaryInt(uint16 input) internal pure returns(uint16 nv) {
-	    // To be completed
+    function getMinimalBinaryInt(uint16 input)
+        internal pure returns(uint16 nv)
+    {
+        // To be completed
     }
 }
